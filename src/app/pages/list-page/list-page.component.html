@@ -1,0 +1,10 @@
+<main class="container-fluid">
+    <div class="operation-table">
+        <ul class="operation-table__nav-tabs" >
+            <li *ngFor="let tab of tabs; let i = index" class="operation-table__nav-link">
+                <span id={{tab}} (click)="handleSelect($event)" >{{tab}}</span>
+            </li>
+        </ul>
+        <app-table-body [dataType]="dataType"></app-table-body>
+    </div>
+</main>

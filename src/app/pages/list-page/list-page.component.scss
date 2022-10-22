@@ -1,0 +1,27 @@
+.operation-table{
+    border: 1px solid black;
+    width: 282px;
+    height: 400px;
+    border-radius: 8px 8px 0 0;
+    
+    &__nav-tabs{
+        display: flex;
+        list-style: none;
+        justify-content: flex-start;
+        position: relative;
+        margin-left: -38px;
+        margin-top: 2px;
+    }
+
+    &__nav-link{
+        padding: 4px 6px;
+        border: 1px solid black;
+        border-bottom: none !important;
+        border-radius: 8px 8px 0 0;
+        cursor: pointer;
+
+        &:not(:last-child){
+            border-right: none !important;
+        }
+    }
+}

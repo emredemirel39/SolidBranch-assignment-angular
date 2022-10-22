@@ -1,0 +1,25 @@
+<main class="container-fluid">
+    <div class="row justify-content-md-center">
+        <div class="col-sm-8">
+            <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">Welcome</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">See transactions</a>
+                  <hr/>
+                  <div class="card-text">You have {{allData.length}} transactions.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="row row-cols-2">
+            <app-summary-card 
+        *ngFor="let dataType of uniqueDataTypes"
+        [dataType]="dataType"
+        [allData]="allData"
+        >
+        </app-summary-card >
+        </div>
+    </div>
+</main>

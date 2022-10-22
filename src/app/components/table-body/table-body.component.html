@@ -1,0 +1,12 @@
+<div class="operation-table__body">
+    <div class="operation-table__content-title">
+        <span class="operation-table__content-col">Name</span>
+        <span class="operation-table__content-col">Acount</span>
+    </div>
+    <ul class="operation-table__content-wrapper">
+        <li class="operation-table__content-row" *ngFor="let data of selectedDatas">
+            <span class="operation-table__content-col">{{data.name.first}}</span>
+            <span class="operation-table__content-col">{{getRandomNumber()}}</span>
+        </li>
+    </ul>
+</div>
